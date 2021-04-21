@@ -1,0 +1,1 @@
+# strict_templatev.2
