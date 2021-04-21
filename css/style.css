@@ -1,0 +1,188 @@
+/* ===========================================================
+Template Name: STRICT || HTML Responsive Template;
+Authore: Md.Sobuj Sarkar;
+Version: 1.0.0;
+Created: 25  February 2021;
+File Description: Main CSS file of the template;
+============================================================== */
+
+/* ===========================================================
+              Variables
+============================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+:root{
+    --primary:#2d3950;
+    --secondary:#15a4fa;
+    --text:#999999;
+    --acent:#15a4fa;
+    --white:#ffffff;
+    --primary_fonts: 'Lato', sans-serif;
+    --title_font_size:40px;
+    --subtitle_font_size:22px;
+    --text_font_size:20px;
+    --Anchor_font_size:16px;
+
+}
+
+body{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size)!important;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1,
+h2,h3,
+h4,h5,h6{
+    font-family: var(--primary_fonts);
+    color: var(--primary);
+}
+h1{
+    font-size: 120px;
+    line-height: 130px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+h2{
+    font-size: var(--title_font_size);
+    line-height: 50px;
+    font-weight: 400;
+}
+h2{
+    font-size: var(--subtitle_font_size);
+    line-height: 30px;
+    font-weight: 400;
+}
+p{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size);
+    color: var(--text);
+    line-height: 30px;
+    font-weight: 400;
+}
+a{
+    font-family: var(--primary_fonts);
+    font-size: var(--Anchor_font_size);
+    color: var(--text);
+    line-height: 20px;
+    font-weight: 700;  
+}  
+a:hover{
+    color: var(--acent);
+}
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+/* ===========================================================
+                  Header Style Start Here
+============================================================== */
+.navbar{
+    padding: 30px 0px;
+}
+.nav-link{
+    font-family: var(--primary_fonts);
+    color: var(--primary)!important;
+    text-transform: uppercase;
+    padding: 0px 25px !important;
+    transition: .3s;
+}
+.nav-link:hover{
+    color: var(--acent)!important;
+    transition: .3s;
+   
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--acent)!important;
+}
+.navbar-light .navbar-toggler {
+    color:var(--primary);
+    border-color:var(--primary)!important;
+    border: 2px solid ;
+}
+.navbar-toggler:hover{
+    color: var(--acent)!important;
+}
+.navbar-toggler{
+    padding: 5px 10px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    border-color: var(--acent)!important;
+}
+/* ===========================================================
+                  Carousel Style Start Here
+============================================================== */
+
+
+.carousel-caption{
+    right: 0px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.carousel-title{
+    position: relative;
+}
+.carousel-title span::after{
+   content: "";
+   position: absolute;
+   width: 80%;
+   height: 2px;
+   background-color: var(--secondary);
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+.carousel-caption p{
+    margin-top: 30px;
+    color: var(--white);
+}
+.carousel-caption button{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 30px;
+}
+.carousel-caption button:hover{
+   background-color: var(--secondary);
+  color: var(--white);
+  transition: .3s;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color:var(--secondary);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* ===========================================================
+                  Simple Style Start Here
+============================================================== */
+#simple{
+    padding-top: 80px;
+    padding-bottom: 112px;
+    background-color:#f6f9f9;
+}
+.simple-wrapper h2{
+    font-family: var(--primary_fonts);
+    font-size: var(--title_font_size);
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+.simple-wrapper p{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size);
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--text);
+}
